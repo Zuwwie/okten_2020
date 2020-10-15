@@ -1,25 +1,27 @@
-*{
-    margin: 0 ;
-    padding: 0 ;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 p {
-    padding: 10px;
+  padding: 10px;
 }
 .photo {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 li {
-    margin-left: 24px;
+  margin-left: 24px;
 }
-h1, h2, h3 {
-    padding: 4px;
-    padding-left: 16px;
+h1,
+h2,
+h3 {
+  padding: 4px;
+  padding-left: 16px;
 }
 li:nth-child(2n) {
-    background-color: silver;
+  background-color: silver;
 }
 .pd10 {
-    padding: 10px;
+  padding: 10px;
 }
