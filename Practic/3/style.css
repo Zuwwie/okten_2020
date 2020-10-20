@@ -36,9 +36,7 @@ nav {
     background-color: turquoise;
     text-align: center;
 }
-.nav_big {
-    /* float: left; */
-}
+
 .nav_mini {
     float: left;
     width: 25%;
