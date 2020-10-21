@@ -65,7 +65,7 @@ nav {
     float: left;
 }
 .main_big:nth-child(1) {
-    background-color: aqua;
+    background-color: rgb(6, 56, 10);
 }
 .main_left {
     margin: 16px auto;
