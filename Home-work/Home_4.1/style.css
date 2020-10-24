@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    padding: 4px 100px;
+    display: flex;
+    justify-content: center;
+}
+.li {
+    margin: 0 10px;
+}
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: brown;
+}
+.nav_main {
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+
+}
+.li_main {
+    margin: 0 10px;
+    font-size: 16px;
+}
