@@ -23,12 +23,29 @@
    align-items: center;
 }
 .nav_main {
-    display: flex;
-    justify-content: center;
+    
     padding: 4px;
 
 }
 .li_main {
     margin: 0 10px;
     font-size: 16px;
+}
+.logo {
+    font-size: 36px;
+}
+.logo>p {
+    font-size: 16px;
+    text-align: center;
+}
+.login_btn {
+    background-color: burlywood;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 80px;
+}
+.login_btn:focus {
+    /* outline-style: none; */
+    outline-width: 0px !important;
+    outline-color: none !important;
 }
