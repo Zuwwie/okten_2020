@@ -1,70 +1,68 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Fira Sans', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
 }
 
 .nav {
-    padding: 4px 100px;
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 12px;
+  padding: 4px 100px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
 }
 .li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 .header {
-    height: 100px;
-    width: 100%;
-    background-color: #7E021A;
-    padding: 0 50px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-   align-items: center;
-   text-align: center;
-   text-transform: uppercase;
+  height: 100px;
+  width: 100%;
+  background-color: #7e021a;
+  padding: 0 50px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
 }
 .nav_main {
-    padding: 4px;
-
+  padding: 4px;
 }
 .li_main {
-    margin: 0 10px;
-    font-size: 14px;
+  margin: 0 10px;
+  font-size: 14px;
 }
 .logo {
-    text-transform: uppercase;
-    font-size: 32px;
+  text-transform: uppercase;
+  font-size: 32px;
 }
-.logo>p {
-    font-size: 11px;
-    text-align: center;
-
+.logo > p {
+  font-size: 11px;
+  text-align: center;
 }
 .login_btn {
-    color: white;
-    background-color: rgb(179,12,31);
-    border: 3px solid white;
-    padding: 10px 20px;
-    border-radius: 80px;
-    text-transform: uppercase;
-    font-weight: 500;
+  color: white;
+  background-color: rgb(179, 12, 31);
+  border: 3px solid white;
+  padding: 10px 20px;
+  border-radius: 80px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 .login_btn:focus {
-    /* outline-style: none; */
-    outline-width: 0px !important;
-    outline-color: none !important;
+  /* outline-style: none; */
+  outline-width: 0px !important;
+  outline-color: none !important;
 }
 .lang {
-   position: absolute;
-   right: 132px;
-   font-size: 11px;
-   font-weight: bold;
+  position: absolute;
+  right: 132px;
+  font-size: 11px;
+  font-weight: bold;
 }
 .menu {
-    font-size: 12px;
+  font-size: 12px;
 }
