@@ -9,6 +9,9 @@
     padding: 4px 100px;
     display: flex;
     justify-content: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
 }
 .li {
     margin: 0 10px;
@@ -26,13 +29,12 @@
    text-transform: uppercase;
 }
 .nav_main {
-    
     padding: 4px;
 
 }
 .li_main {
     margin: 0 10px;
-    font-size: 16px;
+    font-size: 14px;
 }
 .logo {
     text-transform: uppercase;
