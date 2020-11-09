@@ -5,6 +5,6 @@ for (let j = 0; j < arr.length; j++) {
     if (typeof arrElement === `number` || typeof arrElement === `object`) {
             clearArr.push(arrElement)
     }
-     console.log(123);
+     console.log(12);
 }
 console.log(clearArr);
