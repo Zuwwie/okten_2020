@@ -64,22 +64,22 @@ xxx.forEach((v) => {
 
 document.body.appendChild(div222);
 
-let arr = document.body.childNodes;
-console.log(arr);
-arr.forEach((element) => {
-  // console.log(element);
-  if (element.nodeName === "#comment") {
-    console.log(element);
-    let div = document.createElement(`div`);
-    document.body.append(div);
-    document.write(
-      `<div class = 'lol'>${element.data}  <button type="button" id="ci"> Click</button></div>`
-    );
-    ell(`#ci`).addEventListener(`click`, (ev) => {
-      ell(`.lol`).style.display = `none`;
-    });
-  }
-});
+// let arr = document.body.childNodes;
+// console.log(arr);
+// arr.forEach((element) => {
+//   // console.log(element);
+//   if (element.nodeName === "#comment") {
+//     console.log(element);
+//     let div = document.createElement(`div`);
+//     document.body.append(div);
+//     document.write(
+//       `<div class = 'lol'>${element.data}  <button type="button" id="ci"> Click</button></div>`
+//     );
+//     ell(`#ci`).addEventListener(`click`, (ev) => {
+//       ell(`.lol`).style.display = `none`;
+//     });
+//   }
+// });
 
 console.log(document.querySelectorAll(`#cikk`));
 
@@ -115,7 +115,7 @@ function tableGenerator(s, v, ell) {
     }
     inner += `</tr>`;
   }
-  console.log(inner);
+  // console.log(inner);
   createElement.innerHTML = inner;
   document.body.append(createElement);
 }
@@ -162,8 +162,8 @@ getSel(`#badString`).addEventListener(`keyup`, (ev) => {
   });
 });
 
-// -- создать скрипт, который берет считывает на странице (rules.html) текст и делает сбоку меню-оглавление по всем заголовкам которые есть в тексте.
-// При клике на пункт оглавления вы должны отправляться к этому пункту в тексте
+
+
 
 // -- взять массив пользователей
 let usersWithAddress = [
@@ -251,4 +251,27 @@ let usersWithAddress = [
 // 3й - оставляет тех у кого город киев
 // Данные выводить в документ
 
-// queueMicrotask
+// function statusCheak({status}) {
+  // return status === false;
+// }
+// function ageCheak({age}) {
+//   return age >= 29;
+// }
+// function cityCheak({address:{city}}) {
+//   return city === `Kyiv`;
+// }
+let div = document.createElement(`div`);
+let {forms:{filter:[first,second,third]}} = document;
+filter.addEventListener(`click`, (ev) => {
+  let arr = usersWithAddress;
+    first.checked ? arr =  arr.filter(arr => !arr.status): ``;
+    second.checked ? arr = arr.filter(arr => arr.age >= 29): ``;
+    third.checked ? arr =  arr.filter(arr => arr.address.city.toLocaleLowerCase() === `kyiv`) : ``;
+  console.log(arr);
+  div.innerHTML = ``;
+  arr.map(user => {
+    div.innerHTML += ` ${user.name.toLocaleUpperCase()} age=${user.age} status=  ${user.status} <br>` 
+  });
+  document.body.append(div);
+});
+
