@@ -10,4 +10,4 @@ export class UserService {
               console.log(`Eror GET post`);
             })
     }
-};
+}; 
