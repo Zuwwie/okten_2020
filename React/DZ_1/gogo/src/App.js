@@ -2,8 +2,11 @@ import React, { Component } from 'react'
 import PostComponents from './component/post/PostComponents';
 // import UserComponent from './component/user/UserComponent';
 import './App.css'
+import { UserService } from './services/UserService';
 
 export default class App extends Component {
+
+  userService = new UserService();
 
   state = {posts: [], classType: `red`};
   
@@ -11,13 +14,7 @@ export default class App extends Component {
 
 
   componentDidMount(){
-    fetch('https://jsonplaceholder.typicode.com/posts')
-            .then(value => value.json())
-            .then(value => {
-                this.setState({posts: value});
-            }).catch(e => {
-              console.log(`Eror GET post`);
-            })
+    this.userService.getAllUsers().then(value => this.setState({posts: value}));
   }
 
   chengeColor = () => {
