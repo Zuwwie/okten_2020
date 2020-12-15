@@ -10,7 +10,7 @@ export default class AllUser extends Component {
 
    async componentDidMount() {
        let users = await this.userService.users();
-    this.setState({users})
+    this.setState({users});
 }
 
 
@@ -20,8 +20,9 @@ export default class AllUser extends Component {
         return (
             <div>
                 
+                
                 {
-                    users.map(value => <User item={value} key={value.id}/>)
+                users.map((value) => (<User key={value.id} item={value} />))
                 }
 
 
