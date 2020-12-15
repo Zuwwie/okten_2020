@@ -1,13 +1,25 @@
-import React, { Component } from 'react'
-import UserComponent from './component/user/UserComponent';
+import React, { Component } from "react";
+import UserComponent from "./component/user/User";
+import { BrowserRouter as Router, Route, NavLink, Link, Switch } from "react-router-dom";
+import AllUser from "./component/all-users/AllUser";
 
 export default class App extends Component {
-
-
   render() {
     return (
-      <div>
-      </div>
-    )
+      <Router>
+        <div>
+          <ul>
+            <li>
+              <Link to={'/users'} >to all users</Link>
+            </li>
+          </ul>
+          <hr/>
+          <Switch>
+            <Route path={'/users'} render={()=> <AllUser/>} />
+          </Switch>
+          <hr/>
+        </div>
+      </Router>
+    );
   }
 }
