@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { UserService } from "../services/UserService";
 import User from "../user/User";
-import { BrowserRouter as Router, Route, NavLink, Switch } from 'react-router-dom'
+import { BrowserRouter as  Route,  Switch } from 'react-router-dom'
 import './AllUsers.css'
 
 class AllUsers extends Component {
@@ -24,7 +24,13 @@ class AllUsers extends Component {
 
 <div className={'nest'}>
   <Switch>
-    <Route path={'/users/:id'} />
+    <Route path={'/users/:id'} render={(props)=> 
+    {
+      // console.log(props);
+      // this.userService.getUser()
+      return `222`;
+
+    }} />
   </Switch>
 </div>
 

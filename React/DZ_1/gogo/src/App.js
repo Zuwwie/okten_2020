@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import AllUsers from './component/all-users/AllUsers';
 // import UserComponent from './component/user/UserComponent';
-import { BrowserRouter as Router, Route, NavLink, Link, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route,  Link, Switch } from 'react-router-dom'
 import AllPosts from './component/all-posts/AllPosts';
 
 export default class App extends Component {
