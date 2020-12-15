@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import UserComponent from "./component/user/User";
-import { BrowserRouter as Router, Route, NavLink, Link, Switch } from "react-router-dom";
+// import UserComponent from "./component/user/User";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import AllUser from "./component/all-users/AllUser";
 
 export default class App extends Component {
